@@ -110,6 +110,13 @@ body {
 
 .about_sec {
   height: 100vh;
+  
+  &--img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+  }
  
  
   
@@ -123,6 +130,8 @@ body {
     border-top: 0.5px solid $sky-color;
     padding-top: 2rem;
     border-top-style:groove;
+   
+
     
     
 
@@ -131,7 +140,7 @@ body {
     color: $white-color;
 
     h1{
-      padding-top: 30px;
+      padding-top: 25px;
       font-weight: normal;
       letter-spacing: 2px;
       font-size: 30px;
@@ -139,7 +148,7 @@ body {
 
     p{
       letter-spacing: 2px;
-      padding: 50px;
+      padding: 45px;
       line-height: 30px;
       font-size: large;
       text-align: center;

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import profileimg from '../profileimg.png'
 
 
 
@@ -17,7 +17,7 @@ const About = () => {
 
          </div>
          <div className="about_sec--intro">
-    
+            <img className="about_sec--img" src={profileimg} alt=""/>
             
              <h1>Hi, Nice to meet you.</h1>
              <p>Since beginning my journey as a freelance web developer nearly 1 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my developement skills.</p>
