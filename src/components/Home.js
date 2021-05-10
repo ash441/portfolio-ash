@@ -1,5 +1,5 @@
 import React from "react";
-import "font-awesome/css/font-awesome.min.css"
+// import "font-awesome/css/font-awesome.min.css"
 import TextAnimation from 'react-animate-text';
 
 
@@ -36,7 +36,7 @@ return (
           </h1>
           <h1 className="home__desc">frond-end web Developer</h1>
           <button id="hme_btn" className="home__btn" onClick={handleClick} >
-            View my work <i className="fa fa-arrow-right fa-1x "></i>
+            view portfolio
           </button>
         </div>
 

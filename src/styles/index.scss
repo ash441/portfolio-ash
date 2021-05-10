@@ -1,5 +1,5 @@
 $red-color:  #C3073F;
-$white-color:#fff;
+$white-color:#eee;
 $black-color: #1A1A1D;
 $navbar-color: #f5f5f7;
 $sky-color:  #b3ffff;
@@ -35,25 +35,16 @@ body {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  
-  
- 
-
-
- 
   justify-content:space-evenly;
   
-  
-
   &__desc {
     padding: 0;
     font-weight: 300;
     font-size: 3rem;
     letter-spacing: 0.1rem;
+    color:$white-color;
     
-
-
-    &--name {
+   &--name {
       color: $red-color;
     }
   
@@ -62,31 +53,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
   width: 50%;
   margin: 20px;
   color: $white-color;
-  
- 
-
-  
-
-
   background-image: url(../bgimg.JPG);
   background-size: cover;
   border-radius: 50%;
   height: 23rem;
   margin-top: 120px;
-  
- 
-
-
- 
-
-  
-  
-  
-
   
 }
 
@@ -100,9 +74,7 @@ body {
   color:$white-color;
   width: 50%;
   
-
-  
-  }
+}
   
  
 
@@ -111,14 +83,13 @@ body {
     padding: 1rem;
     background-color: transparent;
     color: $white-color;
-   
     font-size: 1.2rem;
     border-radius: 5px;
 
     &:hover {
       background-color: $black-color; 
       color: $red-color;
-      border: 1px solid $sky-color;
+      border: 1px solid $red-color;
     }
   }
 }
@@ -139,6 +110,8 @@ body {
 
 .about_sec {
   height: 100vh;
+ 
+ 
   
 
 
@@ -169,6 +142,10 @@ body {
       padding: 50px;
       line-height: 30px;
       font-size: large;
+      text-align: center;
+     margin-left: 100px;
+     margin-right: 100px;
+      
     }
     a{
       color: $red-color;
@@ -177,12 +154,14 @@ body {
     }
     a:hover{
       transition:all ease-out;
-      font-size: 35px;
+      color: $white-color;
 
     }
     button{
-      padding: 5px;
-      margin: 5px;
+      padding: 10px;
+      margin: 10px;
+      background-color: $sky-color;
+      border: 1px solid $white-color;
     }
   }
   

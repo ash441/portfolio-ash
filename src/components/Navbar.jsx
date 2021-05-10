@@ -104,7 +104,7 @@ margin-top:30px;
 div{
     width: 25px;
     height: 2px;
-    background-color: #fff;
+    background-color: #eee;
     margin-bottom: 4px;
 }
 
