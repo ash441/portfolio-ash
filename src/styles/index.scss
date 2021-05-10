@@ -170,6 +170,7 @@ body {
 .portfolio_sec {
  
   height: 100vh;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,6 +184,7 @@ body {
     border-top: 1px solid $sky-color;
     padding-top: 2rem;
     border-top-style:groove;
+    margin-bottom: 50px;
 
     
     
@@ -192,9 +194,9 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 100px);
+  grid-template-columns: repeat(7, 150px);
   gap: 15px;
-  grid-template-rows: repeat(3, 100px);
+  grid-template-rows: repeat(3, 150px);
   padding: 15px;
   height: 100%;
   width: auto;

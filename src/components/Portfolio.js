@@ -14,7 +14,7 @@ const Portfolio = () => {
           <div className="grid-item three">3</div>
           <div className="grid-item four">4</div>
           <div className="grid-item five">5</div>
-          <div className="grid-item six">6</div>
+          
           
       </div>
       
