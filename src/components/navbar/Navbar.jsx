@@ -9,7 +9,7 @@ import Styled from 'styled-components';
 
 const Navbar = () => {
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   
  
@@ -83,7 +83,7 @@ border-bottom-style: groove;
     overflow:hidden;
     flex-direction: column;
     width:100%;
-    height:auto;
+    height:100%;
     max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
     transition: max-height 0.4s ease-in;
     

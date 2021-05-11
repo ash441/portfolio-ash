@@ -255,6 +255,173 @@ body {
 } 
 
 
+  // Responsive section mobile
+
+@media (max-width: 468px) {
+
+  .home {
+   
+   
+    
+    &__desc {
+      padding: 0;
+      font-weight: 200;
+      font-size: 2.5rem;
+      letter-spacing: 0.1rem;
+      color:$white-color;
+      
+     &--name {
+        color: $red-color;
+      }
+    
+  }
+  .left {
+   width: 0%;
+    
+  }
+  
+  
+  
+  .right {
+    
+    width: 100%;
+    
+  }
+    &__btn {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+     
+      &:hover {
+        background-color: $black-color; 
+        color: $red-color;
+        border: 1px solid $red-color;
+      }
+    }
+  }
+
+  .about_sec {
+    
+    
+    
+    &--img {
+  
+      height: 80px;
+      width: 80px;
+      margin-top: 10px;
+    }
+    &--hd {
+     
+      font-size: 2.5rem;
+      margin-top: 1.5rem;
+   
+      padding-top: 1rem;
+     
+     
+    }
+    &--intro{
+      color: $white-color;
+  
+      h1{
+        padding-top: 15px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 30px;
+      }
+  
+      p{
+        letter-spacing: 1px;
+        padding: 0px;
+        line-height: 20px;
+        font-size: small;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 5px;
+
+       
+      
+        
+      }
+      a{
+        color: $red-color;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      a:hover{
+        transition:all ease-out;
+        color: $white-color;
+  
+      }
+      button{
+        padding: 5px;
+        margin: 8px;
+       
+      }
+    }
+    
+  }
+
+  .portfolio_sec {
+ 
+   &--hd {
+     
+      font-size: 2.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      margin-bottom: 30px;
+  
+      
+      
+      
+  
+    }
+  }
+
+  .grid {
+   
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 150px);
+
+  }
+  .grid-item {
+    
+    &.one {
+      grid-row: span 1;
+      grid-column: span 3;
+
+  
+    }
+    &.two {
+      grid-row:  span 1;
+      grid-column:  span 3;
+    }
+    &.three {
+      grid-row: span 1;
+      grid-column: span 3;
+    }
+    &.four {
+     
+      display: none;
+    }
+    &.five {
+      display: none;
+    }
+  
+  } 
+
+
+  
+  
+
+  
+  
+
+
+}
+
+
+
+
  
  
  
