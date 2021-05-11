@@ -8,7 +8,15 @@ import Styled from 'styled-components';
 
 
 const Navbar = () => {
+
   const [isOpen, setIsOpen] = useState(true);
+
+  
+ 
+
+
+
+
 
 
   function handleClick() {
@@ -25,14 +33,14 @@ const Navbar = () => {
     return (
 
       <Nav>
-          |<Hamburger onClick={()=> setIsOpen(!isOpen)}>
-               <div></div>
-               <div></div>
-               <div></div>
+          |<Hamburger onClick={() => setIsOpen(!isOpen)} >
+               <span />
+               <span />
+               <span />
 
             </Hamburger>
 
-            <Menu isOpen={isOpen}>
+            <Menu isOpen={isOpen} >
                 <MenuLink href="">Home</MenuLink>
                 <MenuLink href="#" onClick={handleClick1}>About</MenuLink>
                 <MenuLink href="#"  onClick={handleClick}>Portfolio</MenuLink>
@@ -71,10 +79,13 @@ border-bottom: 1px solid #b3ffff;
 border-bottom-style: groove;
 
 @media (max-width: 768px) {
+   
     overflow:hidden;
     flex-direction: column;
     width:100%;
     height:auto;
+    max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
+    transition: max-height 0.4s ease-in;
     
    
     a{
@@ -97,11 +108,14 @@ padding-right: 4rem;
 `;
 const Hamburger = Styled.div`
 
+
 display: flex;
 flex-direction: column;
 cursor: pointer;
-margin-top:30px;
-div{
+margin-top:20px;
+margin-right:20px;
+
+span{
     width: 25px;
     height: 2px;
     background-color: #eee;
@@ -109,7 +123,7 @@ div{
 }
 
 @media (min-width:768px) {
-    display:none;
+  display:none;
 }
 
 
