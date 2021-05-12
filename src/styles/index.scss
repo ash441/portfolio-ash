@@ -102,12 +102,6 @@ body {
 }
 
 
-
-
-
-
-
-
 .about_sec {
   height: 100vh;
   
@@ -253,6 +247,169 @@ body {
   }
 
 } 
+
+// tablet responsive
+
+@media (max-width: 768px) and (min-width:460px) {
+
+  
+
+
+  .home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content:space-around;
+    
+    &__desc {
+      padding: 0;
+      font-weight: 300;
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+      color:$white-color;
+      
+     &--name {
+        color: $red-color;
+      }
+    
+  }
+  .left {
+
+    width: 0%;
+ 
+  }
+  .right {
+    
+    width: 100%;
+    
+  }
+
+
+  
+  }
+
+  .about_sec {
+    height: 100vh;
+    font-size: 2.5rem;
+    
+  
+    &--hd {
+     
+      margin-top: 0.5rem;
+     
+     }
+    &--intro{
+      color: $white-color;
+  
+      h1{
+        padding-top: 15px;
+     
+      }
+  
+      p{
+        letter-spacing: 2px;
+        padding: 10px;
+        line-height: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 80px;
+       margin-right: 80px;
+       
+      }
+  
+      a{
+        color: $red-color;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      a:hover{
+        transition:all ease-out;
+        color: $white-color;
+  
+      }
+  
+      button{
+        padding: 5px;
+        margin: 8px;
+       
+      }
+    }
+    
+  }
+
+    
+  .portfolio_sec {
+   
+    &--hd {
+     
+      font-size: 2.5rem;
+     
+  
+      
+      
+      
+  
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 150px);
+    gap: 15px;
+    grid-template-rows: repeat(3, 150px);
+    padding: 15px;
+    height: 100%;
+    width: auto;
+    
+    
+    
+  }
+  .grid-item {
+    background-color: $sky-color;
+  
+  
+   
+    &.one {
+      grid-row: span 2;
+      grid-column: span 3;
+      background-image: url(../1.jpeg);
+      background-size: cover;
+     
+      transition: all ease-in-out 300ms;
+      background-position: top left;
+  
+      
+  
+      &:hover {
+        background-blend-mode: none;
+        background-position: center;
+        
+      }
+    }
+    &.two {
+      grid-row:  span 2;
+      grid-column:  span 2;
+    }
+    &.three {
+      grid-row: span 1;
+      grid-column: span 2;
+    }
+    &.four {
+      grid-row: span 0;
+      grid-column: span 1;
+    }
+    &.five {
+      grid-row: span 1 ;
+      grid-column: span 1;
+    }
+  
+  } 
+  
+    
+  
+   
+    
+   
+}
 
 
   // Responsive section mobile
