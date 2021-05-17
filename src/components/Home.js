@@ -34,7 +34,7 @@ return (
             <p><span className="home__desc--name">Ashfaq Ahmed</span>.</p>
           </TextAnimation>
           </h1>
-          <h1 className="home__desc">frond-end web Developer</h1>
+          <h1 className="home__desc">front-end web Developer</h1>
           <button id="hme_btn" className="home__btn" onClick={handleClick} >
             view portfolio
           </button>
